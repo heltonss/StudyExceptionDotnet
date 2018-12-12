@@ -25,8 +25,6 @@ namespace ByteBank
             Console.WriteLine("Lendo linha. . .");
 
             throw new IOException();
-
-            return "Linha do arquivo";
         }
 
         public void Dispose()

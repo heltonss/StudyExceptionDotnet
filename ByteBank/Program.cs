@@ -31,27 +31,6 @@ namespace ByteBank
                 leitor.LerProximaLinha();
             }
 
-
-
-            // ---------------------------------------------
-
-            //LeitorDeArquivo leitor = null;
-            //try
-            //{
-            //    leitor = new LeitorDeArquivo("contasl.txt");
-
-            //    leitor.LerProximaLinha();
-            //    leitor.LerProximaLinha();
-            //    leitor.LerProximaLinha();
-            //}
-            //finally
-            //{
-            //    Console.WriteLine("Executando o finally");
-            //    if(leitor != null)
-            //    {
-            //        leitor.Fechar();
-            //    }
-            //}
         }
 
         private static void TestaInnerException()
@@ -61,7 +40,6 @@ namespace ByteBank
                 ContaCorrente conta1 = new ContaCorrente(4564, 789684);
                 ContaCorrente conta2 = new ContaCorrente(7891, 456794);
 
-                // conta1.Transferir(10000, conta2);
                 conta1.Sacar(10000);
             }
             catch (OperacaoFinanceiraException e)
@@ -74,8 +52,7 @@ namespace ByteBank
             }
         }
 
-        // Teste com a cadeia de chamada:
-        // Metodo -> TestaDivisao -> Dividir
+     
         private static void Metodo()
         {
             TestaDivisao(0);
